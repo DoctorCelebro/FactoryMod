@@ -2389,6 +2389,7 @@ production_factories:
       - Craft_Bookshelfs
       - Bastion_Framing
       - Craft_Crate
+      - Craft_Crate_Bulk
     repair_multiple: 10
     repair_inputs:
       Paper:
@@ -8409,6 +8410,22 @@ production_recipes:
         amount: 54
         display_name: Crate
         lore: A crate for compacting items
+  Craft_Crate_Bulk:
+    name: Craft Compactor Crate Bulk
+    production_time: 4
+    inputs:
+      Chest:
+        material: CHEST
+        amount: 156
+      'Diamond'
+        material: DIAMOND
+        amount: 1
+    outputs:
+      Crate:
+        material: CHEST
+        amount: 216
+        display_name: Crate
+        lore: A crate for compacting items        
   Enchant_Sharpness:
     name: Enchant With Sharpness 5.
     production_time: 10
